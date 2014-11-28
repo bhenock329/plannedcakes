@@ -1,0 +1,233 @@
+/*  SECTIONS  */
+.section {clear: both;margin: auto; width:100%; max-width:960px;text-align:center;}
+.blogpost .col {{display: block;float:left;margin: 1% 0 1% 0%;}}
+/*  COLUMN SETUP  */
+.col {display: block;float:left;margin: 1% 0 1% 1.6%;}
+.col:first-child {margin-left: 0; }
+
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {content:"";display:table;}
+.group:after {clear:both;}
+.group {zoom:1; /* For IE 6/7 */}
+                                               
+					
+
+/*  GRID OF TWELVE  */
+.span_12_of_12 {width: 100%;}
+.span_11_of_12 {width: 91.53%;}
+.span_10_of_12 {width: 83.06%;}
+.span_9_of_12 {width: 74.6%;}
+.span_8_of_12 {width: 66.13%;}
+.span_7_of_12 {width: 57.66%;}
+.span_6_of_12 {width: 49.2%;}
+.span_5_of_12 {width: 40.73%;}
+.span_4_of_12 {width: 32.26%;}
+.span_3_of_12 {width: 23.8%;}
+.span_2_of_12 {width: 15.33%;}
+.span_1_of_12 {width: 6.866%;}
+
+@media only screen and (max-width: 652px) {
+	.col {margin: 1% 0 1% 0%;}
+	.fixedheader{background-color: white;width:100%;}
+	.navlogo{
+			background-image: url(../img/logo.png);
+			display: block;
+			width:300px;height:63px;
+			text-indent: -9999px;
+			margin:auto;
+			margin-top: 7px;
+			margin-left: 27px;
+			background-repeat: no-repeat; 
+			-webkit-background-size: cover; 
+			background-position: center center;
+			background-size: cover;
+		}
+		.gallerybox{
+			width:100%;
+			height:75%;
+			margin: 0px;
+		}
+		.spotgallery{
+			width:100%;
+			height:75%;
+			margin: 0px;
+		}
+		.nav{
+			display:none;
+		}
+		
+		.mobilicon{
+			display:block;
+			position:absolute;
+			top:22.5px;
+			right:35px;
+		}
+		.mobilicon:hover {
+			cursor: pointer;
+		}
+		.flyout {
+			position: absolute;
+			right: 40%;
+		}
+		.navWidth {
+			left:0%;
+			width:60%;
+		}
+		.navWidth .navlogo {
+			width:0%;
+		}
+		.navWidth .navlogo {
+			background-image: url(../img/mobillogo.png);
+			display: block;
+			width:80px;height:63px;
+			text-indent: -9999px;
+			margin:auto;
+			margin-top: 15px;
+			margin-left: 45px
+			margin-right: 50px;
+			background-repeat: no-repeat; 
+			-webkit-background-size: cover; 
+			background-position: center center;
+			background-size: cover;	
+		}
+		.mobilnav{
+			background-color: #666;
+			margin: 0;
+			width: 40%;
+			height:100%;
+			display:block;
+			padding:0px;
+			position:fixed;
+			top:0px;
+			right:0px;
+			z-index:-1;
+		}
+		.mobilnav li {
+			padding: 17.5 0 17.5 0px;
+			list-style-type: none;
+			border-bottom: 2px solid #7f7f7f;	
+		}
+		.mobilnav li a{
+			color:white;
+			padding:0 0 0 10px;
+		}
+		.mobilnav form{
+			color:white;
+			padding:0 0 0 10px;
+			margin:10 0 0 0px; 
+		}
+		
+		.mobilnav input {
+
+		    border: 1px solid #7f7f7f; 
+		    -webkit-box-shadow: 
+		      inset 0 0 8px  rgba(0,0,0,0.1),
+		            0 0 16px rgba(0,0,0,0.1);  
+		    -moz-box-shadow: 
+		      inset 0 0 8px  rgba(0,0,0,0.1),
+		            0 0 16px rgba(0,0,0,0.1);   
+		    box-shadow: 
+		      inset 0 0 8px  rgba(0,0,0,0.1),
+		            0 0 16px rgba(0,0,0,0.1);
+		    padding: 5px;
+		    background: rgba(212,212,212,0.5);
+		    margin: 0 0 10px 0;
+		    text-align:center;
+		    color: #000;
+		}
+		.mobilenav form { position: relative; }
+		.mobilnav form::before{
+			content: '';
+			position: absolute;
+			top: 30px;
+			left: 20px;
+		}
+		.mobilnav #placeholder{
+			color: #fff
+		}
+	}
+
+@media only screen and (max-width: 652px) {
+	.span_12_of_12 {width: 100%;}
+	.span_11_of_12 {width: 32.26%;}
+	.span_10_of_12 {width: 32.26%;}
+	.span_9_of_12 {width: 74.6%;}
+	.span_8_of_12 {width: 100%;}
+	.span_7_of_12 {width: 32.26%;}
+	.span_6_of_12 {width: 32.26%;}
+	.span_5_of_12 {width: 32.26%;}
+	.span_4_of_12 {width: 100%;}
+	.span_3_of_12 {width: 32.26%;}
+	.span_2_of_12 {width: 100%;}
+	.span_1_of_12 {width: 32.26%;}
+}
+
+@media only screen and (max-width: 400px) {
+	.section {clear: both;margin: auto; width:100%; text-align:center;}
+	.col {margin: 1% 0 1% 0%;}
+	.navlogo{
+			background-image: url(../img/mobillogo.png);
+			display: block;
+			width:80px;height:63px;
+			text-indent: -9999px;
+			margin:auto;
+			margin-top: 15px;
+			margin-right: 27px;
+			background-repeat: no-repeat; 
+			-webkit-background-size: cover; 
+			background-position: center center;
+			background-size: cover;
+			margin-left: 25px;
+		}
+	.mobilicon{
+			display:block;
+			position:absolute;
+			top:22.5px;
+			right:30px;
+		}
+	.flyout{
+			position: absolute;
+			right: 80%;
+		}
+	.navWidth {
+			left:0%;
+			width:20%;
+		}
+	.navWidth .mobillogo {
+			width:0%;
+		}	
+	.navWidth .navseparation{
+		margin-top:0px;	
+	}
+	.navWidth .navlogo {
+			background-image: url(../img/mobillogo.png);
+			width:0px;	
+		}
+	.mobilnav{
+			background-color: #666;
+			margin: 0;
+			width: 80%;
+			height:100%;
+			display:block;
+			padding:0px;
+			position:fixed;
+			top:0px;
+			right:0px;
+			z-index:-1;
+		}
+		.mobilnav.active{ z-index:1; }
+	
+	.spotgallery{
+			width:100%;
+			height:75%;
+			margin: 0px;
+		}
+	.gallerybox{
+			width:100%;
+			height:45%;
+			margin: 0px;
+		}
+	}
